@@ -11,6 +11,7 @@
             }
         }
 
+        // This Will Insert the new Record
         public function Insert($TableName, $Args=[]){
             if($this->IsTableExists($TableName)){
                 $Columns = implode(", ", array_keys($Args));
